@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
+body{
+  background-color:#131418;
+}
 nav{
   height: 6rem;
   width: 100vw;
@@ -130,10 +132,14 @@ nav{
 }
 .main-content h1{
   font-size: 6rem;
-  font-family: "Univers", sans-serif;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  text-shadow: 3px 3px 20px cyan,
+    -2px 1px 30px rgb(19, 22, 22);
 }
 .main-content h3{
   font-size: 1.5rem;
+  color: rgb(18, 240, 18);
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -251,3 +257,7 @@ p{
 .social-container .col {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+
+
+
