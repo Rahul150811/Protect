@@ -90,58 +90,11 @@
     margin-top: 50px;
     font-size: 20px;
   }
-  #button1{
-    margin-top: 2.2rem;
+  .butt1{
+    margin-top: 2rem;
   }
   /*---------------------------------------------*/
-  .search-bar {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    border: 3px solid #00B4CC;
-    border-radius: 50px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    color: #333;
-    font-size: 18px;
-    padding: 20px;
-    width: 80%;
-    margin-top: 15rem;
-    max-width: 600px;
-    display: block;
-  }
-  .search-bar:focus{
-    color: #747b7c;
-  }
-  .searchButton {
-    width: 4rem;
-    margin-left: 55rem;
-    height: 2.8rem;
-    border: 1px solid #00B4CC;
-    background: #00B4CC;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
-    z-index: 5;
-    margin-top: -100px;
-  }
-  
-  @media only screen and (max-width: 768px) {
-      .search-bar {
-          width: 90%;
-      }
-  }
-  
-  @media only screen and (max-width: 480px) {
-      .search-bar {
-          width: 100%;
-          font-size: 16px;
-          padding: 15px;
-          margin-bottom: 40px;
-      }
-  }
+
   /*---------------------------------------------*/
   .fullform{
     margin-top: 5rem;
