@@ -23,7 +23,6 @@ nav{
 
 .nav-links{
   display: flex;
-  z-index: 999;
   list-style: none; 
   width: 88vw;
   padding: 0 0.7vw;
@@ -47,24 +46,22 @@ nav{
 }
 .hamburger{
   display: none;
-  margin-top: 3.5rem;
 }
 
 @media screen and (max-width: 800px){
   nav{
-      z-index: 999;
+      z-index: 5;
   }
   .hamburger{
       display:block;
       position: absolute;
       cursor: pointer;
       right: 5%;
-      margin-top: 2rem;
+      top: 5%;
       z-index: 5;
       transition: all 0.7s ease;
   }
   .nav-links{
-      z-index: 999;
       position: fixed;
       background: #131418;
       height: 100vh;
@@ -79,11 +76,9 @@ nav{
       clip-path: circle(1000px at 90% -10%);
       -webkit-clip-path: circle(1000px at 90% -10%);
       pointer-events: all;
-      z-index: 999;
   }
   .nav-links li{
       opacity: 0;
-      z-index: 999;
   }
   .nav-links li:nth-child(1){
       transition: all 0.5s ease 0.2s;
@@ -110,7 +105,6 @@ nav{
   }
   li.fade{
       opacity: 1;
-      z-index: 999;
   }
 }
 /*Animating Hamburger Icon on Click*/
