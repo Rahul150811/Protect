@@ -4,28 +4,78 @@
   <title>List of Banks</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=">
+  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="cc.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Search for your bank" aria-label="Search for your bank" aria-describedby="search-button">
-    <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
-  </div>
+    <!--------------------------------------------------------------------------------------------------------->
+    <div id="topinfobar" class="regular closable">
+        <div class="hb-content-wrapper">
+          <div class="hb-text-wrapper">
+            <div class="hb-headline-text">
+              <p><span><b>Cyber Helpline available 24 hours, 7 days a week</b></span></p>
+            </div>
+          </div>
+          <a href="#" target="_blank" class="hb-cta hb-cta-button">
+            <div class="hb-text-holder">
+              <p>1800-123-4567</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    <!---------------------------------------------------------------------------------------------------------->
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start logo">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <img src="img/Untitled design.png">
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 text-warning">Home</a></li>
+              <li><a href="differentservices.html" class="nav-link px-2 text-white">Cyber Tools</a></li>
+              <li><a href="contactus.html" class="nav-link px-2 text-white">Contact</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!---------------------------------------------------------------------------------------------------------->
+    <div class="container banksearch">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="input-group mb-3 searchbar">
+              <input type="text" class="form-control search_bar" placeholder="Search for your bank" aria-label="Search for your bank" aria-describedby="search-button">
+              <button class="btn btn-outline-secondary float-right" type="button" id="search-button">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
 
-  <div class="container">
+  <div class="container banklogo">
     <div class="panel panel-default">
           <div class="panel-heading">
-              <h3 class="panel-title">Select your bank from below to fint the information related to your </h3>
+              <h3 class="panel-title">Select your bank below to find contact information to report fraud  </h3>
           </div>   
           <ul class="list-group">
               <li class="list-group-item">
                   <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
                       <div class="col-xs-10">
-                        <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                        <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
+                        <img src="cc logo/bank of america.png" alt="appIcon" height="60" width="60">
+                        <a href="">Bank of America</a>
                       </div>
                       <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
                   </div>
@@ -34,25 +84,25 @@
                       <div class="container">
                           <div class="fluid-row">
                               <div class="col-xs-1">
-                                  Detail:
+                                  Website:
                               </div>
                               <div class="col-xs-5">
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                               </div>
                               <div class="col-xs-1">
-                                  Detail:
+                                  Contact:
                               </div>
                               <div class="col-xs-5">
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                               </div>
                               <div class="col-xs-1">
-                                  Detail:
+                                  Email:
                               </div>
                               <div class="col-xs-5">
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                               </div>
                               <div class="col-xs-1">
-                                  Detail:
+                                  Customer Care:
                               </div>
                               <div class="col-xs-5">
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -62,446 +112,245 @@
                   </div>
               </li>
               <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-                    <div class="col-xs-10">
-                      <img src="https://i.ibb.co/ZGF1fWJ/c-ops.png" alt="appIcon" height="60" width="60">
-                      <a href="https://play.google.com/store/apps/details?id=com.criticalforceentertainment.criticalops&hl=en">Critical Ops 4</a>
-                    </div>
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-1">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                            <div class="col-xs-1">
-                                Detail:
-                            </div>
-                            <div class="col-xs-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
+                  <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+                      <div class="col-xs-10">
+                        <img src="cc logo/td.png" alt="appIcon" height="60" width="60">
+                        <a href="">TD Bank</a>
+                      </div>
+                      <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                  </div>
+                  <div id="detail-1">
+                      <hr></hr>
+                      <div class="container">
+                          <div class="fluid-row">
+                              <div class="col-xs-1">
+                                  Website:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Contact:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Email:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Customer Care:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="list-group-item">
+                  <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+                      <div class="col-xs-10">
+                        <img src="cc logo/capital one.png" alt="appIcon" height="60" width="60">
+                        <a href="">Capital One</a>
+                      </div>
+                      <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                  </div>
+                  <div id="detail-1">
+                      <hr></hr>
+                      <div class="container">
+                          <div class="fluid-row">
+                              <div class="col-xs-1">
+                                  Website:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Contact:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Email:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Customer Care:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="list-group-item">
+                  <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+                      <div class="col-xs-10">
+                        <img src="cc logo/citi.jpg" alt="appIcon" height="60" width="60">
+                        <a href="">Citi Bank</a>
+                      </div>
+                      <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                  </div>
+                  <div id="detail-1">
+                      <hr></hr>
+                      <div class="container">
+                          <div class="fluid-row">
+                              <div class="col-xs-1">
+                                  Website:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Contact:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Email:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Customer Care:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="list-group-item">
+                  <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+                      <div class="col-xs-10">
+                        <img src="cc logo/discover.png" alt="appIcon" height="60" width="60">
+                        <a href="">Discover</a>
+                      </div>
+                      <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                  </div>
+                  <div id="detail-1">
+                      <hr></hr>
+                      <div class="container">
+                          <div class="fluid-row">
+                              <div class="col-xs-1">
+                                  Website:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Contact:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Email:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Customer Care:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="list-group-item">
+                  <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+                      <div class="col-xs-10">
+                        <img src="cc logo/paypal.png" alt="appIcon" height="60" width="60">
+                        <a href="">Paypal</a>
+                      </div>
+                      <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                  </div>
+                  <div id="detail-1">
+                      <hr></hr>
+                      <div class="container">
+                          <div class="fluid-row">
+                              <div class="col-xs-1">
+                                  Website:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Contact:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Email:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Customer Care:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="list-group-item">
+                  <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+                      <div class="col-xs-10">
+                        <img src="cc logo/gpy.png" alt="appIcon" height="60" width="60">
+                        <a href="">Google Pay</a>
+                      </div>
+                      <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                  </div>
+                  <div id="detail-1">
+                      <hr></hr>
+                      <div class="container">
+                          <div class="fluid-row">
+                              <div class="col-xs-1">
+                                  Website:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Contact:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Email:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                              <div class="col-xs-1">
+                                  Customer Care:
+                              </div>
+                              <div class="col-xs-5">
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
           </ul>
     </div>
   </div>
