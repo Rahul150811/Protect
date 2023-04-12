@@ -505,7 +505,80 @@
     padding: 20px;
   }
   /*----------------------------------------------------------------------------------------*/
+  .banner {
+  background-color:#dadbf1;
+  text-align: center;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.h1-banner {
+  font-size: 3rem;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+    font-size: 1.5rem;
+}
+
+.search-button {
+  font-size: 1.2rem;
+}
   /*----------------------------------------------------------------------------------------*/
+  .card {
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    background-size: 30px;
+    background-color: #FFF;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out, opacity 0.2s ease-out;
+    transition-delay: 0.1s;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    transform: translateZ(0);
+  }
+  .card .featured-image {
+    height: 200px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+  .card .featured-image img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border: 0;
+  }
+  .card .content {
+    padding-bottom: 60px;
+    background: #fff;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .card .meta {
+    border-top: 1px solid rgba(0, 0, 0, 0.075);
+    display: block;
+    padding: 10px 15px;
+  }
+  .card:hover {
+    opacity: 1 !important;
+    box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 2px, rgba(49, 49, 49, 0.05) 0px 4px 4px, rgba(42, 42, 42, 0.05) 0px 8px 8px, rgba(32, 32, 32, 0.05) 0px 16px 16px, rgba(49, 49, 49, 0.05) 0px 32px 32px, rgba(35, 35, 35, 0.05) 0px 64px 64px;
+    transform: translate(0, -4px);
+    z-index: 999;
+  }
+  
   /*----------------------------------------------------------------------------------------*/
   /*----------------------------------------------------------------------------------------*/
   /*----------------------------------------------------------------------------------------*/
