@@ -87,6 +87,9 @@
     top: 100%;
     width:100%;
   }
+  .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #650C17;
+  }
   .dropdown:hover .dropdown-menu {
     display: block;
   }
@@ -96,7 +99,7 @@
   }
   .dropdown-item {
     background: #650C17;
-    color: white;
+    color: rgb(255, 255, 255);
     padding-bottom:10px;
     padding-top:10px;    
     padding-left:6%;
