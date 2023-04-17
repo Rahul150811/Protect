@@ -177,6 +177,12 @@
   .butt1{
     margin-top: 1rem;
   }
+  .butt1 a{
+    color:rgb(16, 117, 134);
+  }
+  .butt1:hover a{
+    color: white;
+  }
 /*----------------------------------------------*/
 .appstore{
   margin-top: -80px;
@@ -243,6 +249,9 @@
 }
 .meta a:hover{
   color: white;
+}
+.meta a{
+  color:rgb(16, 117, 134)
 }
 /*----------------------------------------------*/
 .linkname{
