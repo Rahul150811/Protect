@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Nearby Police Stations, Hospitals, and Urgent Care</title>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+      #zip-code-input {
+        width: 200px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Find Nearby Police Stations, Hospitals, and Urgent Care</h1>
+    <input id="zip-code-input" type="text" placeholder="Enter zip code">
+    <div id="map"></div>
+    <script>
+      var map;
+      var markers = [];
+      
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 37.7749, lng: -122.4194}, // Default location
+          zoom: 12
+        });
+        
+        var zipCodeInput = document.getElementById('zip-code-input');
+        zipCodeInput.addEventListener('change', function() {
+          clearMarkers();
+          searchPlaces(zipCodeInput.value);
+        });
+      }
+      
+      function searchPlaces(zipCode) {
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({
+          address: zipCode
+        }, function(results, status) {
+          if (status === 'OK') {
+            var userLatLng = results[0].geometry.location;
+            var service = new google.maps.places.PlacesService(map);
+            service.nearbySearch({
+              location: userLatLng,
+              radius: 5000,
+              types: ['police', 'hospital', 'urgent_care']
+            }, function(results, status) {
+              if (status === 'OK') {
+                for (var i = 0; i < results.length; i++) {
+                  createMarker(results[i]);
+                }
+              }
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+      
+      function createMarker(place) {
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location,
+          icon: getMarkerIcon(place.types[0])
+        });
+        markers.push(marker);
+        google.maps.event.addListener(marker, 'click', function() {
+          // Code to show more information about the selected place
+        });
+      }
+      
+      function clearMarkers() {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(null);
+        }
+        markers = [];
+      }
+      
+      function getMarkerIcon(placeType) {
+        var icons = {
+          police: 'police-marker.png',
+          hospital: 'hospital-marker.png',
+          urgent_care: 'urgent-care-marker.png'
+        };
+        return icons[placeType] || 'default-marker.png';
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4CNfz-GuPskvmgDDau-ZpnwOR8oUTXak&callback=initMap"
+    async defer></script>
+  </body>
+</html>

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Report an Incident</title>
 </head>
-<body>
+<body id="formpage">
    <!--------------------------------------------------------------------------------------------------------->
    <div id="topinfobar" class="regular closable">
       <div class="hb-content-wrapper">
@@ -63,13 +63,12 @@
           <div id="dropdown-icon" class="main-nav-item dropdown">
             <span id="dropdown-icon-symbol" style="float:right; font-size:30px">&#9776;</span>
             <ul class="dropdown-menu">
-              <li class="dropdown-item">Home</li>
-              <li class="dropdown-item">Complaint</li>
-              <li class="dropdown-item">Cyber Tools</li>
-              <li class="dropdown-item">Resources</li>
-              <li class="dropdown-item">Map</li>
-              <li class="dropdown-item">Contact</li>
-              <li class="dropdown-item">My Profile</li>
+               <li class="dropdown-item"><a href="index.html">Home</a></li>
+                <li class="dropdown-item"><a href="tools.html">Tools</a></li>
+                <li class="dropdown-item"><a href="learn.html">Learn</a></li>
+                <li class="dropdown-item"><a href="contactus.html">Contact us</a></li>
+                <li class="dropdown-item"><a href="#">Map</a></li>
+                <li class="dropdown-item"><a href="#">About</a></li>
             </ul>
           </div>
       </div>
@@ -78,72 +77,21 @@
     <div class="container">
         <table class="table table-striped">
            <tbody>
-              <tr>
-                 <td colspan="1">
-                    <form class="well form-horizontal">
-                       <fieldset>
-                          <div class="form-group">
-                             <label class="col-md-4 control-label">Full Name</label>
-                             <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
-                             </div>
-                          </div>
-                          <div class="form-group">
-                             <label class="col-md-4 control-label">Address Line 1</label>
-                             <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="addressLine1" placeholder="Address Line 1" class="form-control" required="true" value="" type="text"></div>
-                             </div>
-                          </div>
-                          <div class="form-group">
-                             <label class="col-md-4 control-label">Address Line 2</label>
-                             <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine2" name="addressLine2" placeholder="Address Line 2" class="form-control" required="true" value="" type="text"></div>
-                             </div>
-                          </div>
-                          <div class="form-group">
-                             <label class="col-md-4 control-label">City</label>
-                             <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="city" name="city" placeholder="City" class="form-control" required="true" value="" type="text"></div>
-                             </div>
-                          </div>
-                          <div class="form-group">
-                             <label class="col-md-4 control-label">State/Province/Region</label>
-                             <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="state" name="state" placeholder="State/Province/Region" class="form-control" required="true" value="" type="text"></div>
-                             </div>
-                          </div>
-                          <div class="form-group">
-                             <label class="col-md-4 control-label">Postal Code/ZIP</label>
-                             <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="postcode" placeholder="Postal Code/ZIP" class="form-control" required="true" value="" type="text"></div>
-                             </div>
-                          </div>
-                          <div class="form-group">
-                             <label class="col-md-4 control-label">Email</label>
-                             <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" placeholder="Email" class="form-control" required="true" value="" type="text"></div>
-                             </div>
-                          </div>
-                          <div class="form-group">
-                             <label class="col-md-4 control-label">Phone Number</label>
-                             <div class="col-md-8 inputGroupContainer">
-                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
-                             </div>
-                          </div>
-                       </fieldset>
-                    </form>
-                 </td>
                  <td colspan="1">
                   <form class="well form-horizontal">
                      <fieldset>
-                      <div class="form-group">
-                         <label for="exampleFormControlTextarea1">Describe what happened</label>
-                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                      <div class="form-group">
-                         <label for="exampleFormControlFile1">Provide any pictures or file</label>
-                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                       </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Full Name</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Address Line 1</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="addressLine1" placeholder="Address Line 1" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
                         <div class="form-group">
                            <label class="col-md-4 control-label">Address Line 2</label>
                            <div class="col-md-8 inputGroupContainer">
@@ -169,17 +117,6 @@
                            </div>
                         </div>
                         <div class="form-group">
-                           <label class="col-md-4 control-label">Country</label>
-                           <div class="col-md-8 inputGroupContainer">
-                              <div class="input-group">
-                                 <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
-                                 <select class="selectpicker form-control">
-                                    <option>A really long option to push the menu over the edget</option>
-                                 </select>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="form-group">
                            <label class="col-md-4 control-label">Email</label>
                            <div class="col-md-8 inputGroupContainer">
                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" placeholder="Email" class="form-control" required="true" value="" type="text"></div>
@@ -191,12 +128,37 @@
                               <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
                            </div>
                         </div>
+                        
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Describe what happened</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                     </div>
+
+                     <!------------------------------------------>
+                     <div id="controls">
+                        <button id="recordButton">Record</button>
+                        <button id="pauseButton" disabled>Pause</button>
+                        <button id="stopButton" disabled>Stop</button>
+                      </div>
+                       <p><strong>Recordings:</strong></p>
+                       <ol id="recordingsList"></ol>
+                       <script src="js/recorder.js"></script>
+                       <script src="js/app.js"></script>
+                     <!------------------------------------------>
+                     <div class="form-group">
+                        <label for="exampleFormControlFile1">Provide any pictures or file</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <div class="row justify-content-end">
+                        <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Submit</button> </div>
+                    </div>
                      </fieldset>
                   </form>
                </td>
-              </tr>
            </tbody>
         </table>
      </div> 
+     <!--------------------------Credit------------------------------->
+     <!--------------------- Code used from and Made by the Pipe Video Recording Platform https://addpipe.com/simple-recorderjs-demo/ -------------------->
 </body>
 </html>
