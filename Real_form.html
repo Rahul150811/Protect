@@ -14,14 +14,106 @@
     <title>Report an Incident</title>
 </head>
 <body id="formpage">
+   <!--------------------------------------------------------------------------------------------------------->
+   <div id="topinfobar" class="regular closable">
+      <div class="hb-content-wrapper">
+        <div class="hb-text-wrapper">
+          <div class="hb-headline-text">
+            <p><span><b>Cyber Helpline available 24 hours, 7 days a week</b></span></p>
+          </div>
+        </div>
+        <a href="#" target="_blank" class="hb-cta hb-cta-button">
+          <div class="hb-text-holder">
+            <p>1800-123-4567</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  <!--------------------------------------------------------------------------------------------------------->
+  <div id="header">
+      <div class="container-full flex-row main-nav">
+          <div class="logo">
+              <img src="img/Untitled design.png" alt="Logo Image">
+          </div>
+          <div class="main-nav-item">
+              <span><a href="index.html">Home</a></span>
+          </div>
+          <div class="main-nav-item">
+            <span><a href="tools.html">Cyber Tools</a></span>
+          </div>
+  
+          <div class="main-nav-item">
+            <span><a href="learn.html">Learn</a></span>
+          </div>
+  
+          <div class="main-nav-item">
+            <span><a href="#">About</a></span>
+          </div>
+  
+          <div class="main-nav-item">
+            <span><a href="contactus.html">Contact</a></span>
+          </div>
+
+          <div class="main-nav-item">
+            <span><a href="">Map</a></span>
+          </div>
+          <div class="main-nav-item">
+            <span><a href="">My Profile</a></span>
+          </div>
+          <div id="dropdown-icon" class="main-nav-item dropdown">
+            <span id="dropdown-icon-symbol" style="float:right; font-size:30px">&#9776;</span>
+            <ul class="dropdown-menu">
+               <li class="dropdown-item"><a href="index.html">Home</a></li>
+                <li class="dropdown-item"><a href="tools.html">Tools</a></li>
+                <li class="dropdown-item"><a href="learn.html">Learn</a></li>
+                <li class="dropdown-item"><a href="contactus.html">Contact us</a></li>
+                <li class="dropdown-item"><a href="#">Map</a></li>
+                <li class="dropdown-item"><a href="#">About</a></li>
+            </ul>
+          </div>
+      </div>
+   </div>
    <!-------------------------------------------------------------------------------------------------------->
    <div class="category-img">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlijKBnmZet2IDa4qjQi42Xa5jf7iE-81n4Q&usqp=CAU" style="width:100%" height="100%">
-      <div class="category-intro">
-         <strong>Ransomware is a type of malicious software (malware)</strong> that is designed to block access to a victim's files or computer system until a sum of money is paid. Ransomware usually operates by encrypting the victim's files, rendering them inaccessible, and then demanding a ransom payment, typically in cryptocurrency, in exchange for the decryption key to restore access to the files.
-         <br>
-         <small><i>If you believe your files are encrypted and inaccessible and believe you are a victim of ransomware, it is important to report the incident to the authorities and seek professional help from cybersecurity experts. Please fill up the complaint form below to help law enforcement agencies investigate and take action against these cyber criminals.</i></small>
-      </div>
+      <img src="img/ransome.jpg" style="width:100%" height="10vh">
+      <div class="accordion" id="accordionExample">
+         <div class="accordion-item">
+           <h2 class="accordion-header" id="headingOne">
+             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               Accordion Item #1
+             </button>
+           </h2>
+           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+             <div class="accordion-body">
+               <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+             </div>
+           </div>
+         </div>
+         <div class="accordion-item">
+           <h2 class="accordion-header" id="headingTwo">
+             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               Accordion Item #2
+             </button>
+           </h2>
+           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+             <div class="accordion-body">
+               <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+             </div>
+           </div>
+         </div>
+         <div class="accordion-item">
+           <h2 class="accordion-header" id="headingThree">
+             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+               Accordion Item #3
+             </button>
+           </h2>
+           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+             <div class="accordion-body">
+               <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+             </div>
+           </div>
+         </div>
+       </div>
    </div>
   <!--------------------------------------------------------------------------------------------------------->
     <div class="container">
@@ -100,7 +192,7 @@
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
                       </div>
                       <div class="row justify-content-end">
-                        <div class="form-group col-sm-4"> <button type="submit" class="btn-block btn-primary">Submit</button> </div>
+                        <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Submit</button> </div>
                     </div>
                      </fieldset>
                   </form>
