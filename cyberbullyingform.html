@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Report an Incident</title>
+</head>
+<body id="formpage">
+   <!-------------------------------------------------------------------------------------------------------->
+   <div class="category-img">
+      <img src="data:image/png;base64,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" style="width:100%" height="100%">
+      <div class="category-intro">
+         <strong>Cyberbullying is a type of harassment</strong> that is carried out through electronic communication, such as social media, text messages, or email. It involves the use of technology to deliberately and repeatedly intimidate, humiliate, or threaten an individual or a group. Cyberbullying can take many forms, such as spreading rumors or lies, posting hurtful or embarrassing messages or images, or creating fake accounts to impersonate or harass someone. The effects of cyberbullying can be devastating and can include anxiety, depression, social isolation, and in extreme cases, even suicide.
+         <br>
+         <small><i>If you believe you are a victim of cyberbullying, it is important to seek help from trusted adults, such as parents or teachers, and to report the incident to the authorities or relevant online platform. Please fill up the complaint form below to help address this issue and take action against those responsible for cyberbullying.</i></small>
+      </div>
+   </div>
+  <!--------------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <table class="table table-striped">
+           <tbody>
+                 <td colspan="1">
+                  <form class="well form-horizontal">
+                     <fieldset>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Full Name</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Address Line 1</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="addressLine1" placeholder="Address Line 1" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Address Line 2</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine2" name="addressLine2" placeholder="Address Line 2" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">City</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="city" name="city" placeholder="City" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">State/Province/Region</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="state" name="state" placeholder="State/Province/Region" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Postal Code/ZIP</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="postcode" placeholder="Postal Code/ZIP" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Email</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" placeholder="Email" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="col-md-4 control-label">Phone Number</label>
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
+                           </div>
+                        </div>
+                        
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Describe what happened</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                     </div>
+
+                     <!------------------------------------------>
+                     <div id="controls">
+                        <button id="recordButton">Record</button>
+                        <button id="pauseButton" disabled>Pause</button>
+                        <button id="stopButton" disabled>Stop</button>
+                      </div>
+                       <p><strong>Recordings:</strong></p>
+                       <ol id="recordingsList"></ol>
+                       <script src="js/recorder.js"></script>
+                       <script src="js/app.js"></script>
+                     <!------------------------------------------>
+                     <div class="form-group">
+                        <label for="exampleFormControlFile1">Provide any pictures or file</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <div class="row justify-content-end">
+                        <div class="form-group col-sm-4"> <button type="submit" class="btn-block btn-primary">Submit</button> </div>
+                    </div>
+                     </fieldset>
+                  </form>
+               </td>
+           </tbody>
+        </table>
+     </div> 
+     <!--------------------------Credit------------------------------->
+     <!--------------------- Code used from and Made by the Pipe Video Recording Platform https://addpipe.com/simple-recorderjs-demo/ -------------------->
+</body>
+</html>

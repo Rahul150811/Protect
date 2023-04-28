@@ -1,4 +1,5 @@
-function openForm() {
+// JavaScript code for the openForm() function
+function openForm(category) {
   var formDiv = document.createElement('div');
   formDiv.style.position = 'fixed';
   formDiv.style.top = '50%';
@@ -15,9 +16,36 @@ function openForm() {
 
   //iframe element to load the form URL
   var formFrame = document.createElement('iframe');
-  formFrame.src = 'form.html';
   formFrame.style.width = '100%';
   formFrame.style.height = '100%';
+
+  //set the URL of the form based on the category
+  switch(category){
+    case 'ransomware':
+      formFrame.src = 'ransomwareform.html';
+      break;
+    case 'phishing':
+      formFrame.src = 'phishingform.html';
+      break;
+    case 'credit':
+      formFrame.src = 'credit.html';
+      break;
+    case 'cyberbullying':
+      formFrame.src = 'cyberbullyingform.html';
+      break;
+    case 'identity':
+      formFrame.src = 'identityform.html';
+      break;
+    case 'computerhacked':
+      formFrame.src = 'computerhackform.html';
+      break;
+    case 'social media':
+      formFrame.src = 'socialmedia.html';
+      break;
+    default:
+      formFrame.src = 'form.html';
+  }
+
   formDiv.appendChild(formFrame);
 
   // "Close" button for the form
