@@ -12,7 +12,7 @@ function openForm(category) {
   formDiv.style.width = '90%';
   formDiv.style.maxWidth = '800px';
   formDiv.style.height = '90%';
-  formDiv.style.maxHeight = '600px';
+  formDiv.style.maxHeight = '800px';
 
   //iframe element to load the form URL
   var formFrame = document.createElement('iframe');

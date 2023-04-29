@@ -311,12 +311,17 @@
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-decoration: none;
 }
 .report-heading {
   font-size: 28px;
   font-weight: bold;
   color: #2e2e2e;
   margin-bottom: 20px;
+  text-decoration: none;
+}
+.report-button a:hover{
+  text-decoration: none;
 }
 .report-button {
   display: inline-block;
@@ -329,7 +334,9 @@
   border-radius: 5px;
 }
 .report-button:hover {
+  text-decoration: none;
   background-color: #2e2e2e;
+  color: orange;
 }
 /*----------------------------------------------*/
 /*----------------------------------------------*/
