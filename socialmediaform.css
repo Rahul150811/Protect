@@ -9,19 +9,13 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-h2{float:left; width:100%; color:#fff; margin-bottom:30px; font-size: 14px;}
-h2 span{font-family: 'Libre Baskerville', serif; display:block; font-size:45px; text-transform:none; margin-bottom:20px; margin-top:30px; font-weight:700}
-h2 a{color:#fff; font-weight:bold;}
 
 
 section{
-    
     float:left;
-    width:100%;
-    background: #43cea2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-padding:30px 0;
+    width: 100%; /* increase the width to 80% */
+    background: #dce0de;  
+    padding:30px 0;
 }
 
 .card {
@@ -30,6 +24,7 @@ padding:30px 0;
     background-color: #fff;
     border-radius: 0.25rem;
     display: flex;
+    width:100%;
     flex-direction: column;
     position: relative;
     margin-bottom:1px;

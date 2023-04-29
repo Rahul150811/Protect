@@ -2,8 +2,21 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Nearby Police Stations, Hospitals, and Urgent Care</title>
+    <title>Find Nearby Police Stations and Hospitals</title>
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 50px;
+      }
       #map {
         height: 400px;
         width: 100%;
@@ -11,11 +24,15 @@
       #zip-code-input {
         width: 200px;
         margin-bottom: 10px;
+        padding: 8px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
       }
     </style>
   </head>
   <body>
-    <h1>Find Nearby Police Stations, Hospitals, and Urgent Care</h1>
+    <h1>Find Nearby Police Stations and Hospitals</h1>
     <input id="zip-code-input" type="text" placeholder="Enter zip code">
     <div id="map"></div>
     <script>
@@ -46,7 +63,7 @@
             service.nearbySearch({
               location: userLatLng,
               radius: 5000,
-              types: ['police', 'hospital', 'urgent_care']
+              types: ['police', 'hospital']
             }, function(results, status) {
               if (status === 'OK') {
                 for (var i = 0; i < results.length; i++) {
@@ -82,11 +99,21 @@
       function getMarkerIcon(placeType) {
         var icons = {
           police: 'police-marker.png',
-          hospital: 'hospital-marker.png',
-          urgent_care: 'urgent-care-marker.png'
+          hospital: 'hospital-marker.png'
         };
         return icons[placeType] || 'default-marker.png';
       }
+      service.nearbySearch({
+  location: userLatLng,
+  radius: 5000,
+  types: ['police', 'hospital']
+}, function(results, status) {
+  if (status === 'OK') {
+    for (var i = 0; i < results.length; i++) {
+      createMarker(results[i]);
+    }
+  }
+});
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4CNfz-GuPskvmgDDau-ZpnwOR8oUTXak&callback=initMap"
     async defer></script>

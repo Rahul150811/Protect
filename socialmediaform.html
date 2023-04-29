@@ -1,202 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="socialmediaform.css">
-    <title>Report an Incident</title>
-</head>
-<body>
-   <!-------------------------------------------------------------------------------------------------------->
-    <section>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="socialmediaform.css">
+      <title>Report an Incident</title>
+   </head>
+   <body>
+      <!-------------------------------------------------------------------------------------------------------->
+      <section>
       <div class="container">
-          <div class="row">
-              <div class="col-md-8 offset-md-2">
-                  <div class="bd-example" data-example-id="">
-  <div id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="card">
-      <div class="card-header" role="tab" id="headingOne">
-        <div class="mb-0">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-              <h3>Instragram</h3>
-          </a>
-          <img src="data:image/png;base64,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">
-        </div>
-      </div>
-  
-      <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
-        <div class="card-block">
-          <div class="row">
-            <div class="col">
-               <strong>Phone Number:</strong><br> 000-000-0000
-            </div>
-            <div class="col">
-               <strong>Email:</strong> example@helpcenter.com
-            </div>
-            <div class="col">
-               <strong>Web Link:</strong> helpcenter.example.com
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" role="tab" id="headingTwo">
-        <div class="mb-0">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-              <h3>Facebook</h3>
-          </a>
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
-        <div class="card-block">
          <div class="row">
-            <div class="col">
-               <strong>Phone Number:</strong><br> 000-000-0000
-            </div>
-            <div class="col">
-               <strong>Email:</strong> example@helpcenter.com
-            </div>
-            <div class="col">
-               <strong>Web Link:</strong> helpcenter.example.com
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" role="tab" id="headingThree">
-        <div class="mb-0">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-              <h3>Whatsapp</h3>
-          </a>
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
-        <div class="card-block">
-         <div class="row">
-            <div class="col">
-               <strong>Phone Number:</strong><br> 000-000-0000
-            </div>
-            <div class="col">
-               <strong>Email:</strong> example@helpcenter.com
-            </div>
-            <div class="col">
-               <strong>Web Link:</strong> helpcenter.example.com
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" role="tab" id="headingOne">
-        <div class="mb-0">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-              <h3>Snapchat</h3>
-          </a>
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </div>
-      </div>
-  
-      <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="">
-        <div class="card-block">
-         <div class="row">
-            <div class="col">
-               <strong>Phone Number:</strong><br> 000-000-0000
-            </div>
-            <div class="col">
-               <strong>Email:</strong> example@helpcenter.com
-            </div>
-            <div class="col">
-               <strong>Web Link:</strong> helpcenter.example.com
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" role="tab" id="headingTwo">
-        <div class="mb-0">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-              <h3>Tinder</h3>
-          </a>
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
-        <div class="card-block">
-         <div class="row">
-            <div class="col">
-               <strong>Phone Number:</strong><br> 000-000-0000
-            </div>
-            <div class="col">
-               <strong>Email:</strong> example@helpcenter.com
-            </div>
-            <div class="col">
-               <strong>Web Link:</strong> helpcenter.example.com
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" role="tab" id="headingThree">
-        <div class="mb-0">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-              <h3>Bumble</h3>
-          </a>
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
-        <div class="card-block">
-         <div class="row">
-            <div class="col">
-               <strong>Phone Number:</strong><br> 000-000-0000
-            </div>
-            <div class="col">
-               <strong>Email:</strong> example@helpcenter.com
-            </div>
-            <div class="col">
-               <strong>Web Link:</strong> helpcenter.example.com
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+          <div class="col-md-8 offset-md-2">
+            <h1 style="font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;">Lost Your Social Media Account? Find Help and Recover Your Profile Now!</h1>
+            <div class="bd-example">
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+                     <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                           <div class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                <img src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670__340.png" alt="Instagram" style="width: 50px; margin-right: 20px;">
+                                <h3 style="display: inline; vertical-align: middle;">Instragram</h3>
+                              </a>
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                           <div class="card-block">
+                              <div class="row">
+                                 <div class="col">
+                                    <strong>Phone Number:</strong><br> 000-000-0000
+                                 </div>
+                                 <div class="col">
+                                    <strong>Email:</strong> example@helpcenter.col-md-8
+                                 </div>
+                                 <div class="col">
+                                    <strong>Web Link:</strong> helpcenter.example.com
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                           <div class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                <img src="https://i.pinimg.com/originals/ce/d6/6e/ced66ecfc53814d71f8774789b55cc76.png" alt="Facebook" style="width: 50px; margin-right: 20px;">
+                                <h3 style="display: inline; vertical-align: middle;">Facebook</h3>
+                              </a>
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                           <div class="card-block">
+                              <div class="row">
+                                 <div class="col">
+                                    <strong>Phone Number:</strong><br> 000-000-0000
+                                 </div>
+                                 <div class="col">
+                                    <strong>Email:</strong> example@helpcenter.com
+                                 </div>
+                                 <div class="col">
+                                    <strong>Web Link:</strong> helpcenter.example.com
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                           <div class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                <img src="https://png.pngtree.com/png-vector/20230225/ourmid/pngtree-whatsapp-icon-social-media-png-image_6618452.png" alt="Whatsapp" style="width: 50px; margin-right: 20px;">
+                                <h3 style="display: inline; vertical-align: middle;">Whatsapp</h3>
+                              </a>
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                           <div class="card-block">
+                              <div class="row">
+                                 <div class="col">
+                                    <strong>Phone Number:</strong><br> 000-000-0000
+                                 </div>
+                                 <div class="col">
+                                    <strong>Email:</strong> example@helpcenter.com
+                                 </div>
+                                 <div class="col">
+                                    <strong>Web Link:</strong> helpcenter.example.com
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                           <div class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                <img src="https://banner2.cleanpng.com/20180622/cxq/kisspng-snapchat-logo-snap-inc-5b2c7e9b8f3b30.1676840615296426515867.jpg" alt="Snapchat" style="width: 50px; margin-right: 20px;">
+                                <h3 style="display: inline; vertical-align: middle;">Snapchat</h3>
+                              </a>
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                           <div class="card-block">
+                              <div class="row">
+                                 <div class="col">
+                                    <strong>Phone Number:</strong><br> 000-000-0000
+                                 </div>
+                                 <div class="col">
+                                    <strong>Email:</strong> example@helpcenter.com
+                                 </div>
+                                 <div class="col">
+                                    <strong>Web Link:</strong> helpcenter.example.com
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                           <div class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/882px-Google_%22G%22_Logo.svg.png?20230305195327" alt="Google" style="width: 50px; margin-right: 20px;">
+                                <h3 style="display: inline; vertical-align: middle;">Google</h3>
+                              </a>
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                           <div class="card-block">
+                              <div class="row">
+                                 <div class="col">
+                                    <strong>Phone Number:</strong><br> 000-000-0000
+                                 </div>
+                                 <div class="col">
+                                    <strong>Email:</strong> example@helpcenter.com
+                                 </div>
+                                 <div class="col">
+                                    <strong>Web Link:</strong> helpcenter.example.com
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                           <div class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="Microsoft" style="width: 50px; margin-right: 20px;">
+                                <h3 style="display: inline; vertical-align: middle;">Microsoft</h3>
+                              </a>
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                        <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                           <div class="card-block">
+                              <div class="row">
+                                 <div class="col">
+                                    <strong>Phone Number:</strong><br> 000-000-0000
+                                 </div>
+                                 <div class="col">
+                                    <strong>Email:</strong> example@helpcenter.com
+                                 </div>
+                                 <div class="col">
+                                    <strong>Web Link:</strong> helpcenter.example.com
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                           <div class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/019/766/223/small_2x/amazon-logo-amazon-icon-transparent-free-png.png" alt="Amazon" style="width: 50px; margin-right: 20px;">
+                                <h3 style="display: inline; vertical-align: middle;">Amazon</h3>
+                              </a>
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                        <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                           <div class="card-block">
+                              <div class="row">
+                                 <div class="col">
+                                    <strong>Phone Number:</strong><br> 000-000-0000
+                                 </div>
+                                 <div class="col">
+                                    <strong>Email:</strong> example@helpcenter.com
+                                 </div>
+                                 <div class="col">
+                                    <strong>Web Link:</strong> helpcenter.example.com
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                      <div class="card-header" role="tab" id="headingTwo">
+                         <div class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                              <img src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-glyph.png" alt="Tiktok" style="width: 50px; margin-right: 20px;">
+                              <h3 style="display: inline; vertical-align: middle;">Tiktok</h3>
+                            </a>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                         </div>
+                      </div>
+                      <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                         <div class="card-block">
+                            <div class="row">
+                               <div class="col">
+                                  <strong>Phone Number:</strong><br> 000-000-0000
+                               </div>
+                               <div class="col">
+                                  <strong>Email:</strong> example@helpcenter.com
+                               </div>
+                               <div class="col">
+                                  <strong>Web Link:</strong> helpcenter.example.com
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="card">
+                    <div class="card-header" role="tab" id="headingThree">
+                       <div class="mb-0">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                            <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt="Twitter" style="width: 50px; margin-right: 20px;">
+                            <h3 style="display: inline; vertical-align: middle;">Twitter</h3>
+                          </a>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                       </div>
+                    </div>
+                    <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                       <div class="card-block">
+                          <div class="row">
+                             <div class="col">
+                                <strong>Phone Number:</strong><br> 000-000-0000
+                             </div>
+                             <div class="col">
+                                <strong>Email:</strong> example@helpcenter.com
+                             </div>
+                             <div class="col">
+                                <strong>Web Link:</strong> helpcenter.example.com
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="card">
+                  <div class="card-header" role="tab" id="headingOne">
+                     <div class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                          <img src="https://www.edigitalagency.com.au/wp-content/uploads/OnlyFans-logo-symbol-icon-png-blue-background.png" alt="OnlyFans" style="width: 50px; margin-right: 20px;">
+                          <h3 style="display: inline; vertical-align: middle;">OnlyFans</h3>
+                        </a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                     </div>
+                  </div>
+                  <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                     <div class="card-block">
+                        <div class="row">
+                           <div class="col">
+                              <strong>Phone Number:</strong><br> 000-000-0000
+                           </div>
+                           <div class="col">
+                              <strong>Email:</strong> example@helpcenter.com
+                           </div>
+                           <div class="col">
+                              <strong>Web Link:</strong> helpcenter.example.com
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                   <div class="mb-0">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="Discord" style="width: 50px; margin-right: 20px;">
+                        <h3 style="display: inline; vertical-align: middle;">Linkedin</h3>
+                      </a>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                   </div>
+                </div>
+                <div id="collapseEleven" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                   <div class="card-block">
+                      <div class="row">
+                         <div class="col">
+                            <strong>Phone Number:</strong><br> 000-000-0000
+                         </div>
+                         <div class="col">
+                            <strong>Email:</strong> example@helpcenter.com
+                         </div>
+                         <div class="col">
+                            <strong>Web Link:</strong> helpcenter.example.com
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="card">
+              <div class="card-header" role="tab" id="headingThree">
+                 <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Discord-logo-blurple.png?20221207123315" alt="Discord" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Discord</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                 </div>
               </div>
-          </div>
-  </div>
-  </div>
-    <script>
-      const accordionItems = document.querySelectorAll('.accordion-item');
-
-accordionItems.forEach(item => {
-  item.addEventListener('click', event => {
-    const content = item.querySelector('.accordion-content');
-    content.style.display = content.style.display === 'block' ? 'none' : 'block';
-  });
-});
-
-    </script>
-  <!---------------------------------------------------------------------------------------------------------> 
-     <!--------------------------Credit------------------------------->
-     <!--------------------- Code used from and Made by the Pipe Video Recording Platform https://addpipe.com/simple-recorderjs-demo/ -------------------->
-</body>
+              <div id="collapseTwelve" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                 <div class="card-block">
+                    <div class="row">
+                       <div class="col">
+                          <strong>Phone Number:</strong><br> 000-000-0000
+                       </div>
+                       <div class="col">
+                          <strong>Email:</strong> example@helpcenter.com
+                       </div>
+                       <div class="col">
+                          <strong>Web Link:</strong> helpcenter.example.com
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           
+           <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+               <div class="mb-0">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                    <img src="https://www.citypng.com/public/uploads/preview/-51609794436soaav8dnrc.png" alt="Twitch" style="width: 50px; margin-right: 20px;">
+                    <h3 style="display: inline; vertical-align: middle;">Twitch</h3>
+                  </a>
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+               </div>
+            </div>
+            <div id="collapseThirteen" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+               <div class="card-block">
+                  <div class="row">
+                     <div class="col">
+                        <strong>Phone Number:</strong><br> 000-000-0000
+                     </div>
+                     <div class="col">
+                        <strong>Email:</strong> example@helpcenter.com
+                     </div>
+                     <div class="col">
+                        <strong>Web Link:</strong> helpcenter.example.com
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         const accordionItems = document.querySelectorAll('.accordion-item');
+         
+         accordionItems.forEach(item => {
+         item.addEventListener('click', event => {
+         const content = item.querySelector('.accordion-content');
+         content.style.display = content.style.display === 'block' ? 'none' : 'block';
+         });
+         });
+         
+      </script>
+      <!---------------------------------------------------------------------------------------------------------> 
+      <!--------------------------Credit------------------------------->
+      <!--------------------- Code used from and Made by the Pipe Video Recording Platform https://addpipe.com/simple-recorderjs-demo/ -------------------->
+   </body>
 </html>
