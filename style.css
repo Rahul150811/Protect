@@ -307,6 +307,30 @@
   padding: 10px 30px;
 }
 /*----------------------------------------------*/
+.report-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.report-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2e2e2e;
+  margin-bottom: 20px;
+}
+.report-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.report-button:hover {
+  background-color: #2e2e2e;
+}
 /*----------------------------------------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
