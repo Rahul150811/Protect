@@ -150,6 +150,16 @@
     }
   }
 /*----------------------------------------------*/
+.card-img-top {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
 /*----------------------------------------------*/
 .about-footer1{
     background-color: #650C17;
@@ -213,3 +223,20 @@
   .card-read-more{
     border: solid 1px rgb(231, 225, 225);
   }
+
+  .page-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #2e2e2e;
+    text-align: center;
+  }
+  
+  .page-subheading {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #5f5f5f;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
